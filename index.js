@@ -5,6 +5,9 @@ const app= express();
 const myssql = require('mysql');
 const { json } = require('body-parser');
 
+/*  This file manages the Database connection and API requests from frontend.
+    The post request from frontend will be received and insert statement will be executed. */
+
 //LOCALHOST CONNECTION
 const db = myssql.createPool({
     host: 'localhost',
